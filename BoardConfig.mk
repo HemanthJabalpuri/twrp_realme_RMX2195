@@ -129,6 +129,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 # Crypto
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
+TW_INCLUDE_CRYPTO := true
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
@@ -140,8 +141,8 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 
 # Set brightness path and level
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
-TW_MAX_BRIGHTNESS := 2047
-TW_DEFAULT_BRIGHTNESS := 1200
+TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 200
 
 # Remove trash
 TW_EXCLUDE_TWRPAPP := true
@@ -171,7 +172,7 @@ TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_EXTRA_LANGUAGES := true
 
 # Set custom paths
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
 
 # Other flags

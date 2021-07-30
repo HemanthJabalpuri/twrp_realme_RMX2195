@@ -27,8 +27,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import /init.recovery.qcom_decrypt.rc
+
 on early-init
     setprop recovery.perf.mode 1
+
+on init
+    write /sys/class/backlight/panel0-backlight/brightness 200
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
