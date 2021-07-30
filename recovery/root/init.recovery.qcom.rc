@@ -27,8 +27,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import /init.recovery.qcom_decrypt.rc
-
 on early-init
     setprop recovery.perf.mode 1
 
@@ -42,9 +40,3 @@ on boot
 
 on property:ro.crypto.type=file
     setprop ro.crypto.state encrypted
-    
-on property:sys.usb.config=fastboot
-    start servicemanager
-    start hwservicemanager
-    restart fastbootd
-#
