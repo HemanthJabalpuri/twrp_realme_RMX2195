@@ -141,8 +141,8 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 
 # Set brightness path and level
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
-TW_MAX_BRIGHTNESS := 255
-TW_DEFAULT_BRIGHTNESS := 200
+TW_MAX_BRIGHTNESS := 2047
+TW_DEFAULT_BRIGHTNESS := 1200
 
 # Remove trash
 TW_EXCLUDE_TWRPAPP := true
