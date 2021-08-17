@@ -28,5 +28,3 @@ PRODUCT_NAME := omni_RMX2195
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme C15 Qcom
 PRODUCT_MANUFACTURER := realme
-
-#
