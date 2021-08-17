@@ -24,11 +24,6 @@ PRODUCT_COPY_FILES += \
     $(OUT_DIR)/target/product/$(PRODUCT_RELEASE_NAME)/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so \
     $(OUT_DIR)/target/product/$(PRODUCT_RELEASE_NAME)/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libcuuc.so
 
-# Use twrp-common for decryption
-PRODUCT_PACKAGES_ENG += \
-    qcom_decrypt \
-    qcom_decrypt_fbe
-
 # Fastbootd stuff
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock
