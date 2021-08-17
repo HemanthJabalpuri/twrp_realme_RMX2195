@@ -15,16 +15,16 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := RMX2194
-$(call inherit-product, device/realme/RMX2194/device.mk)
+PRODUCT_RELEASE_NAME := RMX2195
+$(call inherit-product, device/realme/RMX2195/device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := RMX2194
-PRODUCT_NAME := omni_RMX2194
+PRODUCT_DEVICE := RMX2195
+PRODUCT_NAME := omni_RMX2195
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme C15 Qcom
 PRODUCT_MANUFACTURER := realme

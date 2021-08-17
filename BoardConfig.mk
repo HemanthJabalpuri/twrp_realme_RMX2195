@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX2194
+DEVICE_PATH := device/realme/RMX2195
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -85,7 +85,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX2194
+TARGET_OTA_ASSERT_DEVICE := RMX2195
 
 # Avb
 BOARD_AVB_ENABLE := true
