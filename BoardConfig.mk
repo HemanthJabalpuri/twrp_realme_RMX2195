@@ -56,7 +56,6 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 \
     msm_rtb.filter=0x237 \
     service_locator.enable=1 \
     swiotlb=2048 \
-    loop.max_part=7 \
     androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
