@@ -131,9 +131,6 @@ PLATFORM_VERSION := 20.1.0
 TW_INCLUDE_CRYPTO := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
-# Add sepolicy for fixing binderfs mounting with android-10 sources
-include $(DEVICE_PATH)/sepolicy/sepolicy.mk
-
 # Take a few libraries from sources
 TARGET_RECOVERY_DEVICE_MODULES += \
     ashmemd_aidl_interface-cpp \
